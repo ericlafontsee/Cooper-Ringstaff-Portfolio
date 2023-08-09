@@ -136,33 +136,10 @@ ul, li{
   padding-left: 1rem;
 }
 
-.reviews .row {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.reviewImg {
-  -webkit-box-shadow: 10px 10px 5px #aaaaaa;
-          box-shadow: 10px 10px 5px #aaaaaa;
-  border-radius: 1rem;
-  border: solid 2px #fff;
-  /* max-width: 400px; */
-}
-
-.testimonials {
-  background: #eee;
-  margin: 20px;
-  padding: 20px;
-  -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
-          box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
-}
 
 #servicesContainer {
-  /* background-color: #b9c1bf; */
-  padding: 0 !important;
+  padding: 100px 50px;
 }
-
 .services .card {
   -webkit-box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
           box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
