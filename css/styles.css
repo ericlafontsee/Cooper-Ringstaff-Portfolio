@@ -21,6 +21,9 @@
   max-width: 1200px;
 }
 
+.headerImg{
+  position: relative;
+}
 
 video {
   position: absolute;
@@ -29,6 +32,10 @@ video {
   z-index: -1;
   width: 100%;
   margin-top: -30px;
+}
+#heroText{
+  z-index: 1000;
+  color: #fff;
 }
 
 @media screen and (max-width: 576px){
@@ -80,8 +87,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* background: linear-gradient( 
-    360deg, #a1ada9 0%, rgba(255, 255, 255, 0) 3%); */
 }
 
 @media screen and (max-width: 992px) {
@@ -108,24 +113,30 @@ header {
 }
 
 #overlay {
-  z-index: 1000;
-  padding: 10px;
+  z-index: 2;
   position: absolute;
   top: 0;
   left: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #fff), to(rgba(255, 255, 255, 0)));
-  background: -o-linear-gradient(top, #fff 4%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(180deg, #fff 4%, rgba(255, 255, 255, 0) 100%);
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
 }
 
-#nav {
+nav {
   position: absolute !important;
   top: 0;
-  right: 0 !important;
+  left: 0 !important;
   margin: 13px 0;
   font-size: 24px;
-  width: 500px;
   z-index: 1000;
+ background: none !important;
+ background-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
 }
 
 @media screen and (max-width: 576px) {
@@ -186,14 +197,8 @@ a,
   color: var(--Dark_Green);
 }
 
-/* .cta:hover {
-  color: #3b826e;
-  text-decoration: none;
-} */
 .about{
-  margin-top: -50px;
   padding-top: 100px;
-  /* background: #a1ada9; */
   background: -webkit-gradient(
     linear,left top, left bottom,from(#a1ada9),to(#fff));
   background: -o-linear-gradient(
