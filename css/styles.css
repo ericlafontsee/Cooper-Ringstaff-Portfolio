@@ -26,7 +26,7 @@ body {
           align-items: center;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .headerImg {
     height: 400px;
   }
@@ -127,14 +127,13 @@ a,
 }
 
 .about{
-  padding: 100px;
+  padding: 100px 50px;
   background: #c2c2c2;
+
 }
 
-@media screen and (max-width: 768px){
-  .recovered{
-    margin-top: 60px;
-  }
+ul, li{
+  padding-left: 1rem;
 }
 
 .reviews .row {
@@ -256,13 +255,12 @@ div.services div.card:hover {
 footer {
   background: #a6a6a6;
   color: white;
-  margin: 0 !important;
+  padding: 30px;
 }
 
 footer, footer a {
   color: #000;
-  font-size: 30pt;
-  padding: 30px;
+  font-size: 1.5rem;
 }
 
 footer a:hover {
