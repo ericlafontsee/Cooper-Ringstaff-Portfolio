@@ -1,20 +1,8 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.3.6,
-* Autoprefixer: v10.3.1
-* Browsers: last 4 version
-*/
-
 :root {
   --blue: #1e90ff;
   --white: #ffffff;
   --Light_Green: #638a17;
   --Dark_Green: #16322a;
-}
-
-@font-face {
-  font-family: roboto-regular;
-  src: url("../font/Roboto-Regular.ttf");
 }
 
 .container {
@@ -34,8 +22,10 @@ video {
   margin-top: -30px;
 }
 #heroText{
-  z-index: 1000;
   color: #fff;
+  z-index: 2;
+  background: rgba(255,255,255,0.6);
+  text-align: center;
 }
 
 @media screen and (max-width: 576px){
@@ -45,8 +35,9 @@ video {
 }
 
 body {
-  font-family: roboto-regular;
+  font-family: Arial, Helvetica, sans-serif
 }
+
 
 .row {
   margin: 50px;
@@ -59,13 +50,11 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: #2e4e6b;
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #fff), color-stop(20%, rgba(255, 255, 255, 0)));
-  background: -o-linear-gradient(top, #fff 1%, rgba(255, 255, 255, 0) 20%);
-  background: linear-gradient(180deg, #fff 1%, rgba(255, 255, 255, 0) 20%);
   margin: 0 !important;
 }
 
@@ -112,81 +101,6 @@ header {
   }
 }
 
-#overlay {
-  z-index: 2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-}
-
-nav {
-  position: absolute !important;
-  top: 0;
-  left: 0 !important;
-  margin: 13px 0;
-  font-size: 24px;
-  z-index: 1000;
- background: none !important;
- background-color: transparent !important;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: #fff !important;
-}
-
-@media screen and (max-width: 576px) {
-
-  #overlay,
-  #nav {
-    position: relative;
-  }
-}
-
-.navbar-nav .nav-link{
-  font-weight: 500 !important;
-  color: var(--Dark_Green) !important;
-}
-
-@media screen and (max-width: 992px) {
-  .navbar-nav {
-    text-align: right !important;
-    background: rgba(255, 255, 255, 0.5);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 20px 0 0 auto !important;
-    padding: 5px 10px;
-    width: 200px;
-    list-style: none;
-    z-index: 900 !important;
-  }
-}
-
-
-@media screen and (max-width: 992px) {
-  .navbar-nav {
-    background: rgba(255, 255, 255, 0.9);
-  }
-}
-
-.logo {
-  max-width: 250px;
-}
-
-@media screen and (max-width: 992px) {
-  .logo {
-    max-width: 200px;
-  }
-}
 
 .reviews .card {
   background: #f5f5f5;
@@ -199,13 +113,7 @@ a,
 
 .about{
   padding-top: 100px;
-  background: -webkit-gradient(
-    linear,left top, left bottom,from(#a1ada9),to(#fff));
-  background: -o-linear-gradient(
-    top,#a1ada9 0%,#fff 100%);
-  background: linear-gradient(
-    180deg,#a1ada9 0%,#fff 100%);
-
+  background: #c2c2c2;
 }
 
 @media screen and (max-width: 768px){
