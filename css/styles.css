@@ -112,7 +112,7 @@ a,
 }
 
 .about{
-  padding-top: 100px;
+  padding: 100px;
   background: #c2c2c2;
 }
 
@@ -240,16 +240,13 @@ div.services div.card:hover {
 
 
 footer {
-  /* background: var(--Light_Green); */
-  background: black;
-  /* color: var(--Dark_Green); */
+  background: #a6a6a6;
   color: white;
-  /* position: absolute; */
   margin: 0 !important;
 }
 
-footer a {
-  color: white;
+footer, footer a {
+  color: #000;
   font-size: 30pt;
   padding: 30px;
 }
